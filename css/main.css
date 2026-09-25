@@ -274,6 +274,17 @@ body {
   font-family: 'Noto Serif JP', serif;
 }
 
+/* パンケーキメニュー（メニューページ）: 1列表示に変更
+   共通コンポーネント（.menu_list / .menu_item）自体は変更せず、
+   .pancake_menu 配下にのみスコープした上書きにすることで
+   トップページの Recommended menu には影響させない */
+.pancake_menu .menu_list {
+  flex-direction: column;
+}
+.pancake_menu .menu_item {
+  width: 100%;
+}
+
 /* ボタンコンポーネント */
 .btn {
   padding: 10px 20px;
